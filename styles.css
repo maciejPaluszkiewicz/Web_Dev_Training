@@ -1,0 +1,52 @@
+:root {
+    --custom-blue: #4c5eab;
+    --custom-white:#f8f8fc;
+  }
+
+body {
+    width: 1024px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    background-color:var(--custom-white);
+}
+
+header {
+    background-color:var(--custom-blue);
+    height: 250px;
+    color: var(--custom-white);
+}
+
+.profile-pic {
+    box-sizing:border-box;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 7%;
+    margin-right: 4%;
+    margin-top: 5.5%;
+    float: left;
+}
+
+.header-inner-col {
+    box-sizing:border-box;
+    float: left;
+    width: 45%;
+}
+
+.profile-name {
+    margin-top: 13%;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.profile-title {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+header aside {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+}
