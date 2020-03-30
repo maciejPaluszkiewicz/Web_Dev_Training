@@ -1,10 +1,12 @@
 :root {
     --custom-blue: #4c5eab;
     --custom-white:#f8f8fc;
+    --custom-black: #4f4f4f;
   }
 
 body {
     width: 1024px;
+    box-sizing:border-box;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     background-color:var(--custom-white);
@@ -17,24 +19,24 @@ header {
 }
 
 .profile-pic {
-    box-sizing:border-box;
+
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin-left: 7%;
+    margin-left: 80px;
     margin-right: 4%;
     margin-top: 5.5%;
     float: left;
 }
 
-.header-inner-col {
-    box-sizing:border-box;
+.profile {
+
     float: left;
     width: 45%;
 }
 
 .profile-name {
-    margin-top: 13%;
+    margin-top: 15%;
     margin-bottom: 0;
     font-size: 2.5rem;
     font-weight: 800;
@@ -46,7 +48,65 @@ header {
 }
 
 header aside {
-    box-sizing: border-box;
+
     float: left;
     width: 25%;
+    margin-top: 4%;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+header aside dt{
+    float: left;
+
+}
+
+header aside dd{
+    margin-bottom: 12px;
+
+}
+main {
+    overflow:hidden;
+    color: var(--custom-black);
+}
+.main-info {
+    padding-left: 80px;
+    float: left;
+    width: 26%;
+    background-color: lightgray;
+}
+
+.portfolio-box {
+    float: left;
+    width: 66%;
+    background-color: lightseagreen;
+}
+
+
+
+.main-profile {}
+
+.main-interests {}
+
+.main-reference {}
+
+.main-awards {}
+
+
+
+
+
+
+footer {
+
+    background-color: var(--custom-blue);
+    position: relative;
+    height: 60px;
+    margin-top: -60px;
+    color: var(--custom-white);
+    padding-top: 10px;
+    padding-left: 80px;
+}
+
+footer p {
+    
 }
