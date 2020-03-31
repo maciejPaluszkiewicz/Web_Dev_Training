@@ -1,12 +1,12 @@
 :root {
     --custom-blue: #4c5eab;
     --custom-white:#f8f8fc;
-    --custom-black: #4f4f4f;
+    --custom-black: #333333;
   }
 
 body {
     width: 1024px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     background-color:var(--custom-white);
@@ -67,18 +67,46 @@ header aside dd{
 main {
     overflow:hidden;
     color: var(--custom-black);
+
 }
+
+main h3 {
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+}
+main h3 span {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: var(--custom-blue);
+    color: var(--custom-white);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 12.5px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    
+}
+main .portfolio-box h3 span {
+    margin-right: 40px;
+}
+
 .main-info {
     padding-left: 80px;
     float: left;
     width: 26%;
     background-color: lightgray;
+    padding-top: 4px;
 }
 
 .portfolio-box {
+    box-sizing: border-box;
     float: left;
     width: 66%;
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
+    padding-top: 4px;
+    padding-left: 15px;
 }
 
 
