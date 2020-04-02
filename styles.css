@@ -74,6 +74,7 @@ main h3 {
     font-weight: 600;
     font-family: 'Montserrat';
     font-size: 1.6rem;
+    margin-bottom: 1rem;
 }
 main h3 span {
     box-sizing: border-box;
@@ -93,27 +94,52 @@ main .portfolio-box h3 span {
 }
 
 .main-info {
+    box-sizing: border-box;
     padding-left: 80px;
     float: left;
-    width: 26%;
-    background-color: lightgray;
-    padding-top: 4px;
+    width: 34%;
+    /* background-color: lightgray; */
+    padding-top: 12px;
+    padding-right: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    background: rgb(248,248,252);
+    background: linear-gradient(90deg, rgba(248,248,252,1) 0%, rgba(248,248,252,1) 66%,rgba(220,220,224,0.15) 100%);
 }
 
 .portfolio-box {
     box-sizing: border-box;
     float: left;
     width: 66%;
-    /* background-color: lightseagreen; */
-    padding-top: 4px;
+    background-color: var(--custom-white);
+    padding-top: 12px;
     padding-left: 15px;
 }
 
-
-
+.interests-icon {
+    box-sizing: border-box;
+    display: inline-block;
+    background: var(--custom-white);
+    border-radius: 50%;
+    height: 58px;
+    width: 58px;
+    border: 8px solid var(--custom-blue);
+    font-size: 1.4rem;
+    color: var(--custom-blue);
+    padding-top: 8px;
+    padding-left: 9px;
+}
+.interests-icon .fa-galactic-republic {
+    padding-left:2px;
+}
+.interests-icon .fa-fist-raised {
+    padding-left:4px;
+}
 .main-profile {}
 
 .main-interests {}
+
+
 
 .main-reference {}
 
