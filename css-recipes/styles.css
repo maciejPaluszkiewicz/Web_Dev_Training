@@ -61,6 +61,12 @@ header aside dt{
 
 }
 
+header aside a{
+    font-weight: 400;
+    color: var(--custom-white);
+    text-decoration: none;
+}
+
 header aside dd{
     margin-bottom: 12px;
 
@@ -156,7 +162,7 @@ main .portfolio-box h3 span {
 
 .main-interests {}
 
-.main-reference li:before {
+/* .main-reference li:before {
         background-color: #c00;
         width: 2px;
         content: '';
@@ -171,7 +177,7 @@ main .portfolio-box h3 span {
     margin: 0;
     padding-bottom: 1em;
     padding-left: 20px;
-}
+} */
 
 .main-awards article {
     font-weight: 600;
@@ -214,7 +220,66 @@ main .portfolio-box h3 span {
     font-weight: 600;
     margin-top:5px;
 }
+a:hover {
+    font-weight: 800;
+  }
 
+/*/////////////////////////////////////////////////////////////////////*/
+.reference-list p{
+    float:right;
+    display: inline-block;
+    width: 210px;
+}
+
+
+
+.reference-list a{
+    display: block;
+    font-weight: 600;
+    color: var(--custom-blue);
+    text-decoration: none;
+}
+
+  .reference-list li span {
+    box-sizing: border-box;
+    display: inline-block;
+    font-weight: 800;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 1em;
+    background: white;
+    border: 7px solid grey;
+    /* color: white; */
+    position: relative;
+    margin: 2.8em 0;
+  }
+  .reference-list li::before {
+    content: '';
+    position: absolute;
+    background: grey;
+    top: -54px;
+    left: 9px;
+    width: 1px;
+    height: 111px;
+  }
+  .reference-list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .reference-list li {
+    position: relative;
+    list-style-type: none;
+    text-align: left;
+    clear:both;
+  }
+
+  .reference-list li:first-child::before {
+    display: none;
+  }
+  /*/////////////////////////////////////////////////////////////////////////////*/
 
 footer {
 
