@@ -20,12 +20,11 @@ header {
 }
 
 .profile-pic {
-
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin-left: 80px;
-    margin-right: 4%;
+    margin-left: 70px;
+    margin-right: 3%;
     margin-top: 5.5%;
     float: left;
 }
@@ -37,14 +36,16 @@ header {
 }
 
 .profile-name {
-    margin-top: 15%;
+    margin-top: 18%;
     margin-bottom: 0;
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
 }
 
 .profile-title {
-    margin-top: 5px;
+    margin-top: 2px;
     font-weight: 600;
 }
 
@@ -231,7 +232,9 @@ a:hover {
     width: 210px;
 }
 
-
+.reference-list a:hover {
+    font-weight: 800;
+  }
 
 .reference-list a{
     display: block;
