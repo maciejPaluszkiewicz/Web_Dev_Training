@@ -59,7 +59,6 @@ header aside {
 }
 header aside dt{
     float: left;
-
 }
 
 header aside a{
@@ -70,7 +69,6 @@ header aside a{
 
 header aside dd{
     margin-bottom: 12px;
-
 }
 main {
     overflow:hidden;
@@ -106,7 +104,6 @@ main .portfolio-box h3 span {
     padding-left: 80px;
     float: left;
     width: 34%;
-    /* background-color: lightgray; */
     padding-top: 12px;
     padding-right: 20px;
     font-size: 1.1rem;
@@ -137,15 +134,8 @@ main .portfolio-box h3 span {
     padding-top: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
-    /* padding-left: 9px; */
 }
-.interests-icon .fa-galactic-republic {
-    /* font-size: 1.4rem; */
-  
-}
-.interests-icon .fa-fist-raised {
-    /* padding-left: 4px; */
-}
+
 .interests-wrapping:nth-of-type(2){
     margin-left: 18px;
     margin-right: 18px;
@@ -155,30 +145,9 @@ main .portfolio-box h3 span {
         width: 70px;
         float: left;
         margin-bottom: 40px;
-        /* margin-left: 10px; */
         text-align: center;
         font-weight: 600;
 }
-.main-profile {}
-
-.main-interests {}
-
-/* .main-reference li:before {
-        background-color: #c00;
-        width: 2px;
-        content: '';
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        left: 5px;
-}
-
-.main-reference li {
-    position: relative;
-    margin: 0;
-    padding-bottom: 1em;
-    padding-left: 20px;
-} */
 
 .main-awards article {
     font-weight: 600;
@@ -225,10 +194,8 @@ a:hover {
     font-weight: 800;
   }
 
-/*/////////////////////////////////////////////////////////////////////*/
 .reference-list p{
     float:right;
-    display: inline-block;
     width: 210px;
 }
 
@@ -254,7 +221,6 @@ a:hover {
     border-radius: 1em;
     background: white;
     border: 7px solid grey;
-    /* color: white; */
     position: relative;
     margin: 2.8em 0;
   }
@@ -282,7 +248,6 @@ a:hover {
   .reference-list li:first-child::before {
     display: none;
   }
-  /*/////////////////////////////////////////////////////////////////////////////*/
 
 footer {
 
@@ -293,8 +258,4 @@ footer {
     color: var(--custom-white);
     padding-top: 10px;
     padding-left: 80px;
-}
-
-footer p {
-    
 }
