@@ -149,7 +149,7 @@ main .portfolio-box h3 span {
         font-weight: 600;
 }
 
-.main-awards article {
+.main-awards p {
     font-weight: 600;
     margin-top: 3px;
 }
@@ -159,7 +159,7 @@ main .portfolio-box h3 span {
     padding-bottom: 40px;
 }
 
-.portfolio-box section {
+.portfolio-box div {
     padding-left: 65px;
 }
 .portfolio-box figure {
