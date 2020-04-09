@@ -1,0 +1,44 @@
+main {
+    display: grid;
+}
+
+.home {
+    background: #f2f2f2;
+}
+.home-container{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    /* justify-content: space-between; */
+}
+
+.home-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 2;
+}
+
+.about {
+    background :#c2c2c2;
+}
+
+.fine-ingredients{
+    background: #f2f2f2;
+}
+
+.menu {
+    background :#c2c2c2;
+}
+
+.guest-reviews {
+    background: #f2f2f2;
+}
+
+.reservations {
+    background :#c2c2c2;
+}
+
+footer {
+    background: #2c2c2c;
+}
