@@ -42,7 +42,7 @@ main {
     flex-direction: row;
     justify-content: space-around;
     flex-grow: 2;
-    font-family: "Gentium Book Basic"; 
+    font-family: "Gentium Book Basic", Arial; 
     font-weight: bold;
     font-size: 21px;
     margin-top: 40px;
@@ -106,14 +106,54 @@ main {
 }
 
 .about {
+    display: flex;
     background-image: url('../images/pic-02.png');
     background-color: #c2c2c2;
     height: 710px;
+    flex-direction: row;
+}
+.about img{
+    width: 750px;
+}
+
+
+.about div{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-top: 150px;
+    /* margin-left: 250px; */
+    /* align-content: center;
+    justify-content: center; */
+    /* margin: 250px 0px 250px 350px; */
+    width: 800px;
+    align-items: center;
+    /* margin: 105px 100px 0px 100px; */
+}
+
+.about h2{
+    font-size: 36px;
+    color: rgba(204,153,0,1);
+    font-family: "Yeseva One", sans-serif;
+
 }
 
 .about h2:after{
     content: url('../images/about-divider.png');
 }
+
+
+
+.about div p{
+    text-align: center;
+    /* margin: 20px 20px 200px 300px; */
+}
+
+.about div p::after{
+    content: url('../images/cook.png');
+    /* margin-top: 10px; */
+}
+
 
 .fine-ingredients{
     background-image: url('../images/pic-03.png');
@@ -121,9 +161,48 @@ main {
     height: 758px;
 }
 
+.ingredients-container{
+    text-align: center;
+    width: 570px;
+    height: 557px;
+    background-color:rgba(0,0,0,0.6);
+    float: right;
+    margin-top: 100px;
+    margin-right: 200px;
+}
+
+.fine-ingredients h2{
+    margin-bottom: 0;
+}
+
 .fine-ingredients h2:after{
     content: url('../images/ingredients-divider.png');
+    margin-top: 25px;
 }
+.fine-ingredients h2 span{
+    margin: 60px 75px 60px 75px;
+    size: 36px;
+    color:  #ffffff; 
+    font-family: "Yeseva One", sans-serif;
+}
+
+
+.fine-ingredients p{
+    size: 16px;
+    color: #ffffff; 
+    font-family: "Lato", sans-serif;
+}
+
+.fine-ingredients .ingredients-images-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ingredients-images-container img{
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 50%;
+}
+
 
 .menu {
     background-image: url('../images/pic-04.png');
@@ -131,19 +210,82 @@ main {
     height: 994px;
 }
 
+.menu section{
+
+}
+
+.menu div {
+
+}
+
+.menu h3{
+    font-size: 36px;
+    color: rgba(204,153,0,1);
+    font-family: "Yeseva One", sans-serif;
+    font-weight: normal;
+}
+
 .menu h3:after{
     content: url('../images/menu-divider.png');
 }
 
+.dish-name{
+    font-size: 21px;
+    color: rgba(204,153,0,1);
+    font-family: "Yeseva One", sans-serif;
+}
+
+.dish-price{
+    font-size: 21px;
+    color: rgba(204,153,0,1);
+    font-family: "Yeseva One", sans-serif;
+}
+
+.dish-description{
+    font-size: 16px;
+    color:#222222; 
+    font-family: "Lato", sans-serif;
+
+}
 
 .guest-reviews {
     background-image: url('../images/pic-05.png');
     background-color: #868686;
     height: 758px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 250px;
+    padding-left: 250px;
+}
+
+.reviews-container{
+    margin: auto;
+    display: inline-block;
+    width: 770px;
+    height: 557px;
+    background-image: url('../images/reviews-section-background.png');
+ 
+}
+
+
+.guest-reviews h2{
+    font-size: 36px;
+    color: rgba(255,255,255,1);
+    font-family: "Yeseva One", sans-serif;
+    font-weight: normal;
 }
 
 .guest-reviews h2:after{
+    display: block;
     content: url('../images/reviews-divider.png');
+}
+
+.guest-reviews p{
+    font-size: 18px;
+    color: rgba(255,255,255,1);
+    font-family: "Gentium Book Basic", Arial; 
 }
 
 
@@ -153,7 +295,7 @@ main {
     height: 710px;
 }
 
-.guest-reviews h2:after{
+.reservations h2:after{
     content: url('../images/reservations-divider.png');
 }
 
