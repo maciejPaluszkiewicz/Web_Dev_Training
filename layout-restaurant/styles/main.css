@@ -107,13 +107,21 @@ main {
 
 .about {
     display: flex;
+    width: 1600px;
+    box-sizing: border-box;
     background-image: url('../images/pic-02.png');
     background-color: #c2c2c2;
     height: 710px;
     flex-direction: row;
+    padding: 0px 200px;
+    align-items: center;
 }
 .about img{
-    width: 750px;
+    width: 621px;
+    height: 625px;
+    margin-left: -20px;
+    margin-top: 29px;
+    margin-right: 35px;
 }
 
 
@@ -121,39 +129,40 @@ main {
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    margin-top: 150px;
-    /* margin-left: 250px; */
-    /* align-content: center;
-    justify-content: center; */
-    /* margin: 250px 0px 250px 350px; */
     width: 800px;
     align-items: center;
-    /* margin: 105px 100px 0px 100px; */
+    margin-top: -20px;
+
 }
 
 .about h2{
     font-size: 36px;
     color: rgba(204,153,0,1);
     font-family: "Yeseva One", sans-serif;
-
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
 .about h2:after{
     display: block;
-    content: url('../images/about-divider.png');
+    content: url(../images/about-divider.png);
+    margin-top: 5px;
 }
 
 
-
 .about div p{
+    margin: 0px 78px;
+    color: #2c2c2c;
+    line-height: 25px;
     text-align: center;
-    /* margin: 20px 20px 200px 300px; */
 }
 
 .about div p::after{
     display: block;
-    content: url('../images/cook.png');
-    /* margin-top: 10px; */
+    content: url(../images/cook.png);
+    margin-top: 57px;
+    margin-left: 77px;
 }
 
 
@@ -202,7 +211,7 @@ main {
 }
 
 .ingredients-images-container img{
-    border: 2px solid rgba(255,255,255,0.6);
+    
     border-radius: 50%;
 }
 
@@ -276,7 +285,7 @@ main {
 
 .guest-reviews h2 {
     font-size: 36px;
-    color: rgba(255,255,255,1);
+    color: rgba(199, 199, 199, 1);
     font-family: "Yeseva One", sans-serif;
     font-weight: normal;
     margin-top: 80px;
