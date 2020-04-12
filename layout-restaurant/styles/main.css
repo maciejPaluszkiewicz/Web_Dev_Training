@@ -42,7 +42,7 @@ main {
     flex-direction: row;
     justify-content: space-around;
     flex-grow: 2;
-    font-family: "Gentium Book Basic", Arial; 
+    font-family: 'Gentium Book Basic', serif;
     font-weight: bold;
     font-size: 21px;
     margin-top: 40px;
@@ -139,6 +139,7 @@ main {
 }
 
 .about h2:after{
+    display: block;
     content: url('../images/about-divider.png');
 }
 
@@ -150,6 +151,7 @@ main {
 }
 
 .about div p::after{
+    display: block;
     content: url('../images/cook.png');
     /* margin-top: 10px; */
 }
@@ -176,6 +178,7 @@ main {
 }
 
 .fine-ingredients h2:after{
+    display: block;
     content: url('../images/ingredients-divider.png');
     margin-top: 25px;
 }
@@ -226,6 +229,7 @@ main {
 }
 
 .menu h3:after{
+    display: block;
     content: url('../images/menu-divider.png');
 }
 
@@ -270,25 +274,46 @@ main {
 }
 
 
-.guest-reviews h2{
+.guest-reviews h2 {
     font-size: 36px;
     color: rgba(255,255,255,1);
     font-family: "Yeseva One", sans-serif;
     font-weight: normal;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
 .guest-reviews h2:after{
     display: block;
+    margin-top: 9px;
     content: url('../images/reviews-divider.png');
 }
 
-.guest-reviews p{
-    font-size: 18px;
-    color: rgba(255,255,255,1);
-    font-family: "Gentium Book Basic", Arial; 
+.guest-reviews p {
+    font-size: 22px;
+    color: rgb(199, 199, 199, 1);
+    font-family: "Yeseva One", sans-serif;
+    margin: 10px 79px;
+    line-height: 46px;
 }
 
+.guest-reviews p.quote-sign{
+    font-size: 18px;
+    color: rgba(255,255,255,1);
+    font-family: Arial, Helvetica, sans-serif
+}
+/* “  */
 
+
+.guest-reviews p:first-of-type:before {
+    content: '“';
+    display: inline-block;
+    float: left;
+    font-family: 'Proza Libre', sans-serif;
+    margin-left: -61px;
+    font-size: 76px;
+    color: rgb(165, 165, 165);
+}
 .reservations {
     background-image: url('../images/pic-06.png');
     background-color: #c2c2c2;
@@ -296,6 +321,7 @@ main {
 }
 
 .reservations h2:after{
+    display: block;
     content: url('../images/reservations-divider.png');
 }
 
