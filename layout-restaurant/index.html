@@ -17,8 +17,6 @@
 <body>
     <main class="container">
         <section class="home">
-            <!-- main title home -->
-
             <div class="home-container">
                 <h3>LAMBDA</h3>
                 <nav class="home-navigation">
@@ -37,31 +35,24 @@
             </div>
 
             <h1> <span>the right ingredients for the right food</span>
-                <!-- <img src="images/home-main-page-divider.png" alt="ARTLINE" /> -->
             </h1>
-
-
             <div class="button-container">
                 <button class="home-button">book a table</button>
                 <button class="home-button">see the menu</button>
             </div>
 
         </section>
-        <a name='about'></a>
-        <section class="about">
+        <section class="about" id='about'>
             <div>
                 <h2><span>Just the right food</span></h2>
                 <p>If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers
                     coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins,
                     and
                     gourmet coffees make us hard to resist! Stop in today and check us out!</p>
-                <!-- <img src="images/cook.png" alt="signed" /> -->
             </div>
             <img src="images/dish.png" alt="dish" />
         </section>
-        <a name='ingredients'></a>
-        <section class="fine-ingredients">
-            <!--  background with basil  -->
+        <section class="fine-ingredients" id='ingredients'>
             <div class="ingredients-container">
 
                 <h2><span>Fine ingredients</span></h2>
@@ -71,12 +62,13 @@
                     and
                     gourmet coffees make us hard to resist! Stop in today and check us out!</p>
                 <div class="ingredients-images-container">
-                    <img src="images/ingredients-elements-wheat-round.png" alt="wheat" /><img src="images/ingredients-elements-cayenne-round.png"
-                        alt="cayenne" /><img src="images/ingredients-elements-bread-round.png" alt="bread" /></div>
+                    <img src="images/ingredients-elements-wheat-full.png" alt="wheat" />
+                    <img src="images/ingredients-elements-cayenne-full.png" alt="cayenne" />
+                    <img src="images/ingredients-elements-bread-full.png" alt="bread" />
+                </div>
             </div>
         </section>
-        <a name='menu'></a>
-        <div class="menu">
+        <div class="menu" id="menu">
             <section class="menu-appetisers">
                 <h3><span>Appetisers</span></h3>
                 <div>
@@ -150,8 +142,7 @@
                 </div>
             </section>
         </div>
-        <a name='reviews'></a>
-        <section class="guest-reviews">
+        <section class="guest-reviews" id='reviews'>
             <div class="reviews-container">
                 <h2><span>Guest Reviews</span></h2>
 
@@ -163,8 +154,7 @@
                 <p class="quote-sign">- food inc, New York</p>
             </div>
         </section>
-        <a name='reservations'></a>
-        <section class="reservations">
+        <section class="reservations" id='reservations'>
             <div class="reservation-images">
                 <img src="images/reservations-main-dish.png" alt="maindish" />
                 <img src="images/reservations-dessert.png" alt="dessert" />
@@ -179,9 +169,9 @@
                         freshly baked food.</p>
                 </div>
                 <form class="contact-sheet">
-                    <span><label>Name</label> <input type="text" name="name" placeholder="your name *" /></span>
-                    <span><label>Email</label> <input type="email" name="email" placeholder="your email *" /></span>
-                    <span><label>Date</label> <input type="date" name="date" placeholder="date *" /></span>
+                    <span><label>Name</label> <input type="text" name="name" placeholder="your name *" required /></span>
+                    <span><label>Email</label> <input type="email" name="email" placeholder="your email *" required /></span>
+                    <span><label>Date</label> <input type="date" name="date" required /></span>
                     <span><label>Party Number</label>
                         <select name="party_number">
                             <option value="" disabled selected>party number</option>
@@ -192,7 +182,7 @@
                             <option value="5">5</option>
                             <option value="6">6</option>
                         </select></span>
-                    <span><button>Book now!</button></span>
+                    <span><button type="submit">Book now!</button></span>
                 </form>
             </div>
         </section>
