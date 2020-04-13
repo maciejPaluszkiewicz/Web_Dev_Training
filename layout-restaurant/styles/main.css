@@ -223,7 +223,12 @@ main {
 .menu {
     background-image: url('../images/pic-04.png');
     background-color: #c2c2c2;
+    box-sizing: border-box;
     height: 994px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 70px 200px;
 }
 
 .menu section{
@@ -231,7 +236,29 @@ main {
 }
 
 .menu div {
+    margin: 0px 50px 10px 50px;
+    padding: 10px;
+}
 
+.menu .special-dish{
+    position: relative;
+    border: 1px solid rgba(204,153,0,0.2);
+}
+
+.menu .special-dish:after{
+    position: absolute;
+    content: "Special";
+    box-sizing: border-box;
+    background-color: rgba(204,153,0,0.4);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8); 
+    font-family: "Lato", sans-serif;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    padding-top: 1px;
+    top: -20px;
+    right: -1px;
 }
 
 .menu h3{
@@ -239,6 +266,9 @@ main {
     color: rgba(204,153,0,1);
     font-family: "Yeseva One", sans-serif;
     font-weight: normal;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .menu h3:after{
@@ -247,22 +277,28 @@ main {
 }
 
 .dish-name{
+    display: inline-block;
     font-size: 21px;
     color: rgba(204,153,0,1);
     font-family: "Yeseva One", sans-serif;
 }
 
 .dish-price{
+   
     font-size: 21px;
     color: rgba(204,153,0,1);
     font-family: "Yeseva One", sans-serif;
+    float: right;
 }
 
 .dish-description{
+    display: block;
     font-size: 16px;
     color:#222222; 
     font-family: "Lato", sans-serif;
-
+    border-top: 1px solid rgba(204,153,0,0.2);
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .guest-reviews {
@@ -328,14 +364,101 @@ main {
     color: rgb(165, 165, 165);
 }
 .reservations {
-    background-image: url('../images/pic-06.png');
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    background-image: url(../images/pic-06.png);
     background-color: #c2c2c2;
     height: 710px;
+    padding: 20px 215px;
+    
+}
+.reservations .reservation-images{
+    display: flex;
+}
+.reservations .reservation-images img{
+    margin-right: 30px;
+}
+
+.reservations h2{
+    font-size:36px;
+    color: rgba(204,153,0,1);
+    font-family: "Yeseva One", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
 }
 
 .reservations h2:after{
     display: block;
     content: url('../images/reservations-divider.png');
+}
+
+.reservations .reservations-info{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+.reservations .reservations-info p{
+    text-align: center;
+    color: #353535;
+    line-height: 27px;
+}
+
+.reservations .contact-sheet{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    /* grid-auto-rows: 80px;  */
+    grid-template-rows: 2fr 2fr 1fr;
+
+}
+.reservations .contact-sheet input, .reservations .contact-sheet select{
+    width: 200px;
+    height: 33px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    color: #868686;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border:  1px solid rgba(50,50,50,0.3);
+}
+
+.reservations .contact-sheet input:hover, .reservations .contact-sheet select:hover, .reservations .contact-sheet input:active, .reservations .contact-sheet select:active {
+    border: 1px solid rgba(204,153,0,1);;
+}
+.reservations .contact-sheet label {
+    display: inline-block;
+    color: rgba(204,153,0,1);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.reservations .contact-sheet button{
+    width: 200px;
+    height: 33px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    padding-left: 10px;
+    background-color: rgba(204,153,0,1);
+    border: none;
+    /* padding-left: 10px; */
+    box-sizing: border-box;
+    
+}
+
+
+.reservations .contact-sheet span:nth-last-child(1) {
+    grid-column: span 2;
+    justify-self: center;
 }
 
 footer {
@@ -354,7 +477,7 @@ footer section h3{
     color:  rgb(230, 230, 230);
     font-family: "Yeseva One", sans-serif;
     font-weight: normal;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
