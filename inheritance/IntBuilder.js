@@ -25,11 +25,6 @@ class IntBuilder extends Builder {
         this.value = this.value % n;
         return this;
     }
-
-    get() {
-        return this.value;
-    }
-
 }
 
 export default IntBuilder;

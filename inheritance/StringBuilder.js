@@ -5,29 +5,25 @@ const StringBuilder = function (value) {
 };
 
 StringBuilder.prototype.minus = function (n) {
-
+    this.value = this.value.substring(0, this.value.length - n);
     return this;
 }
 StringBuilder.prototype.multiply = function (n) {
-
+    this.value = this.value.repeat(n);
     return this;
 }
 StringBuilder.prototype.divide = function (n) {
-
+    this.value = this.value.substring(0, Math.floor(this.value.length / n));
     return this;
 }
 StringBuilder.prototype.remove = function (n) {
-
+    this.value = this.value.split(n).join("");
     return this;
 }
-StringBuilder.prototype.sub = function (n) {
-
+StringBuilder.prototype.sub = function (from, n) {
+    this.value = this.value.substring(from, from + n);
     return this;
 }
-StringBuilder.prototype.get = function () {
-    return this.value;
-}
-
     /*
 new StringBuilder(str)   // constructor takes starting string, if not passed starts with '';
 plus(...str)             // takes infinite number of strings and concat with stored string;
