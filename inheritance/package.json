@@ -1,0 +1,18 @@
+{
+    "name": "inheritance",
+    "version": "1.0.0",
+    "description": "JS inheritance task",
+    "scripts": {
+        "test": "npm run lint && jest",
+        "lint": "node node_modules/eslint/bin/eslint.js ./src",
+        "jest": "jest",
+        "lintfix": "node node_modules/eslint/bin/eslint.js ./src --fix"
+    },
+    "author": "Maciej Paluszkiewicz",
+    "devDependencies": {
+        "eslint": "^6.6.0",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-plugin-import": "^2.18.2",
+        "jest": "latest"
+    }
+}
