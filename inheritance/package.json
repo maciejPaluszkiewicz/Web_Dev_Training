@@ -2,7 +2,6 @@
     "name": "inheritance",
     "version": "1.0.0",
     "description": "JS inheritance task",
-    "type": "module",
     "scripts": {
         "test": "npm run lint && jest",
         "lint": "node node_modules/eslint/bin/eslint.js ./src",

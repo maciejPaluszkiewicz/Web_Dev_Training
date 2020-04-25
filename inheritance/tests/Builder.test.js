@@ -1,12 +1,6 @@
-// import Builder from '../src/Builder'
 const Builder = require('../src/Builder');
 
 describe('Builder', () => {
-    // let builder;
-
-    // beforeEach(() => {
-    //     builder = new Builder();
-    // });
 
     it('Should return string value given in constructor', () => {
         //given
@@ -35,7 +29,7 @@ describe('Builder', () => {
         expect(result).toEqual(6);
     });
 
-    it('Should return sum of values after using plus method', () => {
+    it('Should return sum of numeric values after using plus method', () => {
         //given
         let builder = new Builder(12);
         //when
@@ -45,5 +39,13 @@ describe('Builder', () => {
         expect(result).toEqual(22);
     });
 
-
+    it('Should return concatenation of string values after using plus method', () => {
+        //given
+        let builder = new Builder('Rince');
+        //when
+        const arr = ['w', 'i', 'n', 'd'];
+        const result = builder.plus(...arr).get();
+        //then
+        expect(result).toEqual('Rincewind');
+    });
 });

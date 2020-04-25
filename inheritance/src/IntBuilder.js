@@ -1,8 +1,14 @@
-const Builder = require('../src/Builder');
+const Builder = require('./Builder');
 
 class IntBuilder extends Builder {
   constructor(value = 0) {
     super(Number(value));
+  }
+
+  static random(from, to) {
+    const min = Math.ceil(from);
+    const max = Math.floor(to);
+    return Math.floor(Math.random() * (max - min)) + min;
   }
 
   minus(...n) {
@@ -27,13 +33,3 @@ class IntBuilder extends Builder {
 }
 
 module.exports = IntBuilder;
-
-/*
-new IntBuilder(int) // constructor takes starting integer, if not passed starts with 0;
-.plus(...n)         // take infinite number of integers and sum all with stored value;
-.minus(...n)        // take infinite number of integers and subtract from stored value;
-.multiply(n)        // multiply param n on stored value;
-.divide(n)          // leaves integer part of division stored value on n;
-.mod(n)             // leaves remainder of the division stored value with on n;
-.get()              // returns stored value;
-*/
