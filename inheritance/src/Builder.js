@@ -1,31 +1,31 @@
 class Builder {
-  constructor(value) {
-    this.value = value;
-  }
+    constructor(value) {
+        this.value = value;
+    }
 
-  plus(...n) {
-    this.value = n.reduce((x, y) => x + y, this.value);
-    return this;
-  }
+    plus(...n) {
+        this.value = n.reduce((x, y) => x + y, this.value);
+        return this;
+    }
 
-  minus() {
-    return this;
-  }
+    minus() {
+        return this;
+    }
 
-  multiply() {
-    return this;
-  }
+    multiply() {
+        return this;
+    }
 
-  divide() {
-    return this;
-  }
+    divide() {
+        return this;
+    }
 
-  get() {
-    return this.value;
-  }
+    get() {
+        return this.value;
+    }
 }
 
-export default Builder;
+module.exports = Builder;
 
 /*
 new IntBuilder(int) // constructor takes starting integer, if not passed starts with 0;

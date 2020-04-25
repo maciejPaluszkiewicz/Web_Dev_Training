@@ -1,4 +1,4 @@
-import Builder from './Builder';
+const Builder = require('../src/Builder');
 
 class IntBuilder extends Builder {
   constructor(value = 0) {
@@ -26,7 +26,7 @@ class IntBuilder extends Builder {
   }
 }
 
-export default IntBuilder;
+module.exports = IntBuilder;
 
 /*
 new IntBuilder(int) // constructor takes starting integer, if not passed starts with 0;

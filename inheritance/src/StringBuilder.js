@@ -1,8 +1,10 @@
-import Builder from './Builder';
+const Builder = require('../src/Builder');
 
-const StringBuilder = function StringBuilder(value) {
-  Builder.call(this, value);
+const StringBuilder = function StringBuilder(value = '') {
+  // Builder.call(this, value);
+  Object.assign(this, new Builder(value));
 };
+StringBuilder.prototype = Object.create(Builder.prototype);
 
 StringBuilder.prototype.minus = function minus(n) {
   this.value = this.value.substring(0, this.value.length - n);
@@ -24,6 +26,8 @@ StringBuilder.prototype.sub = function sub(from, n) {
   this.value = this.value.substring(from, from + n);
   return this;
 };
+
+module.exports = StringBuilder;
 /*
 new StringBuilder(str)   // constructor takes starting string, if not passed starts with '';
 plus(...str)             // takes infinite number of strings and concat with stored string;
